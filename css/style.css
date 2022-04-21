@@ -42,4 +42,59 @@ main {
   width: 500px;
   margin: 0 auto;
   border-radius: 20px;
+  padding: 2.5rem;
+}
+
+.rating-card .rating-star {
+  background: red url("/img/icon-star.svg") no-repeat center;
+  width: 32px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100px;
+}
+
+.rating-card h2 {
+  color: var(--white);
+  /* font-size */
+}
+
+.rating-card p {
+  color: var(--light-gray);
+}
+
+.rating-card ul.rating-numbers {
+  color: var(--light-gray);
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-card .rating-numbers li {
+  background-color: red;
+  width: 42px;
+  aspect-ratio: 1 / 1;
+  /* height: 32px; */
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.rating-card .rating-submit {
+  background-color: var(--orange);
+  color: var(--white);
+  letter-spacing: 2.2px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  height: 42px;
+  text-align: center;
+  width: 100%;
+  border-radius: 100px;
+}
+
+/* thank you card */
+.thankyou-card {
+  display: none;
 }
