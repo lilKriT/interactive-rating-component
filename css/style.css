@@ -39,7 +39,8 @@ main {
 
 .rating-card {
   background-color: var(--dark-blue);
-  width: 500px;
+  background: radial-gradient(circle at top, var(--dark-blue) 0%, var(--very-dark-blue) 200%);
+  width: 400px;
   margin: 0 auto;
   border-radius: 20px;
   padding: 2.5rem;
@@ -70,7 +71,7 @@ main {
 }
 
 .rating-card .rating-numbers li {
-  background-color: red;
+  background-color: var(--very-dark-blue);
   width: 42px;
   aspect-ratio: 1 / 1;
   /* height: 32px; */
