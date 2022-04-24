@@ -51,6 +51,7 @@ main {
   margin: 0 auto;
   border-radius: 20px;
   padding: 2.5rem;
+  display: none;
 }
 
 .rating-card .rating-star {
@@ -134,5 +135,12 @@ main {
 
 /* thank you card */
 .thankyou-card {
-  display: none;
+  display: block;
+}
+
+.thankyou-card .thankyou-image {
+  background: url("/img/illustration-thank-you.svg") no-repeat center;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
 }
