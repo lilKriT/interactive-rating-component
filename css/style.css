@@ -7,6 +7,8 @@
   --medium-gray: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+
+  --card-width: 400px;
 }
 
 html {
@@ -37,10 +39,15 @@ main {
   align-items: center;
 }
 
-.rating-card {
+.rating-card,
+.thankyou-card {
   background-color: var(--dark-blue);
-  background: radial-gradient(circle at top, var(--dark-blue) 0%, var(--very-dark-blue) 200%);
-  width: 400px;
+  background: radial-gradient(
+    circle at top,
+    var(--dark-blue) 0%,
+    var(--very-dark-blue) 200%
+  );
+  width: var(--card-width);
   margin: 0 auto;
   border-radius: 20px;
   padding: 2.5rem;
@@ -76,7 +83,7 @@ main {
   margin-bottom: 25px;
 }
 
-.rating-card .rating-numbers li button{
+.rating-card .rating-numbers li button {
   background-color: var(--dark-blue);
   color: var(--light-gray);
   width: 50px;
@@ -88,12 +95,19 @@ main {
   font-size: 1.7rem;
   border-width: 0;
   transition: all 0.3s;
+  line-height: 2.5;
+  cursor: pointer;
 }
 
 .rating-card .rating-numbers li button:hover {
   background-color: var(--orange);
   color: var(--white);
   transition: all 0.3s;
+}
+
+.rating-card .rating-numbers li button.active {
+  background-color: var(--light-gray);
+  color: var(--white);
 }
 
 .rating-card .rating-submit {
@@ -109,6 +123,7 @@ main {
   width: 100%;
   border-radius: 100px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .rating-card .rating-submit:hover {
