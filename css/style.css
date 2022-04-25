@@ -51,7 +51,10 @@ main {
   margin: 0 auto;
   border-radius: 20px;
   padding: 2.5rem;
-  display: none;
+}
+
+.rating-card {
+  display: block;
 }
 
 .rating-card .rating-star {
@@ -135,7 +138,7 @@ main {
 
 /* thank you card */
 .thankyou-card {
-  display: block;
+  display: none;
   text-align: center;
 }
 
@@ -163,5 +166,12 @@ main {
 }
 
 .thankyou-card p {
-  color: var(--medium-gray)
+  color: var(--medium-gray);
+}
+
+@media screen and (max-width: 768px) {
+  .rating-card,
+  .thankyou-card {
+    margin: 10rem auto;
+  }
 }
